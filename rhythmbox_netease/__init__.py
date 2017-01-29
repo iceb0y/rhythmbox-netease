@@ -1,0 +1,1 @@
+from rhythmbox_netease.plugin import NeteasePlugin
