@@ -7,7 +7,7 @@ CIPHER = AES.new(b'rFgB&h#%2?^eDg:Q', AES.MODE_ECB)
 def encrypt(plain):
     padding = 16 - len(plain) % 16
     plain += chr(padding) * padding
-    return hexlify(CIPHER.encrypt(plain)).upper()
+    return hexlify(CIPHER.encrypt(plain))
 
 def decrypt(crypt):
     plain = CIPHER.decrypt(unhexlify(crypt))

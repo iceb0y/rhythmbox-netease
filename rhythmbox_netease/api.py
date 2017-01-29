@@ -2,7 +2,7 @@ import codecs
 import json
 from six.moves.urllib.parse import urlencode
 from six.moves.urllib.request import urlopen, Request
-from netease.cipher import encrypt
+from rhythmbox_netease.cipher import encrypt
 
 def http_post(url, **kwargs):
     return urlopen(Request(url, data=urlencode(kwargs).encode(),
